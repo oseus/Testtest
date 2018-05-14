@@ -12,4 +12,13 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should show Sign in" do
+   get root_path
+   assert_response :success
+   assert_select "li","Sign up"
+ end
+
+
+
+
 end
