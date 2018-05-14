@@ -1,0 +1,27 @@
+<br>
+<br>
+<br>
+<h1>Nos membres très privés</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nom</th>
+      <th>Prénom</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user.each do |user| %>
+      <tr>
+        <td><%= user.nom %></td>
+        <td><%= user.prenom %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<br>
+<br>
